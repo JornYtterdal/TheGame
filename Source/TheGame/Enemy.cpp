@@ -45,10 +45,10 @@ void AEnemy::Tick(float DeltaTime)
 	}
 }
 
-//void AEnemy::ImHit()
- //{
- //    AMyPawn* TempPawn = Cast<AMyPawn>(GetWorld()->GetFirstPlayerController()->GetPawn());
- //    TempPawn->EnemiesShot++;
- //    Destroy();
- //}
+void AEnemy::ImHit()
+ {
+     AMyFaun* TempPawn = Cast<AMyFaun>(GetWorld()->GetFirstPlayerController()->GetPawn());
+    TempPawn->EnemiesShot++;
+     Destroy();
+ }
 
